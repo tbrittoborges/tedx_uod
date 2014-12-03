@@ -62,14 +62,13 @@ a:focus {
 }
 
 @navbar-height: 150px;
-@navbar-brand-vpadding: 10px;
+@navbar-brand-vpadding: 30px;
 
 .navbar-brand img {
   height: @navbar-height - @navbar-brand-vpadding * 2;
   position: absolute;
   top: @navbar-brand-vpadding;
-   max-width: 50%;
-
+  max-width: 50%;
 }
 
 .navbar-custom {
@@ -376,7 +375,8 @@ body {
 }
 
 #main-logo {
-  max-width: 200px;
+  width: 100% \9;
+  max-width: 40%;
 
 }
 
