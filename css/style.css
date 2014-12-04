@@ -62,7 +62,7 @@ a:focus {
 }
 
 @navbar-height: 150px;
-@navbar-brand-vpadding: 30px;
+@navbar-brand-padding: 30px;
 
 .navbar-brand img {
   height: @navbar-height - @navbar-brand-vpadding * 2;
@@ -77,6 +77,14 @@ a:focus {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #000;
+}
+
+.navbar-header {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*background-color: #000;*/
 }
 
 .navbar-custom .navbar-brand {
@@ -150,7 +158,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro.jpg-large) no-repeat bottom center scroll;
+    background: url(../img/Dundee-by-Night_edited.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -226,7 +234,7 @@ a:focus {
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0 {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -243,7 +251,7 @@ a:focus {
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0 {
         -moz-transform: scale(1);
         transform: scale(1);
@@ -261,14 +269,14 @@ a:focus {
 }
 
 .content-section {
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .download-section {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    background: url(../img/the_law_small_bw.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -276,7 +284,7 @@ a:focus {
     -o-background-size: cover;
 }
 
-#map {
+#GoogleMap {
     width: 100%;
     height: 200px;
     margin-top: 100px;
@@ -284,16 +292,16 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 150px;
     }
 
     .download-section {
         padding: 100px 0;
     }
 
-    #map {
+    #GoogleMap {
         height: 400px;
-        margin-top: 250px;
+        margin-top: 20px;
     }
 }
 
@@ -379,4 +387,3 @@ body {
   max-width: 40%;
 
 }
-
