@@ -90,9 +90,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <!--<h3 class="brand-heading">Inspire to change,</h3>-->
-                        <h3>Make &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a difference</h3>
+                        <h1>Make &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a difference</h1>
 
                         <a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
@@ -125,7 +124,7 @@
                     multiple initiatives. The two annual TED Conferences invite
                     the world's leading thinkers and doers to speak for
                     18 minutes or less. Many of these talks are then made
-                    available, free, at <link href="www.ted.com">ted.com</link>
+                    available, free, at <a href="http://www.ted.com">ted.com</a>
                 </p>
                 <h2>About the organizing committee</h2>
                 <p>
@@ -141,8 +140,9 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Speakers</h2>
                 Speakers invitation are on their way! We are also organising an
-                self nomationfeaturing
-                self nomination speakers.
+                self nomation and we may feature you.
+                <a class="page-scroll" href="#foot">
+                    Contac us</a> for more details.
             </div>
         </div>
     </section>
@@ -183,8 +183,9 @@
                 <h2>Tickets</h2>
             </div>
         </div>
-        <div style="width:100%; text-align:left;" >
-            <iframe src="http://www.eventbrite.com/tickets-external?eid=4653432542&ref=etckt&v=2" frameborder="0" height="280" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+        <div>
+            A total of one hundred tickts will be on sale. The event will be
+            open to both general public and university studen
         </div>
     </section>
 
@@ -209,8 +210,6 @@
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
 
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>-->
     <script src="http://maps.googleapis.com/maps/api/js"></script>
     <script>
         var myCenter= new google.maps.LatLng(56.459399, -2.982406);
@@ -218,8 +217,8 @@
             var mapProp = {
                 center: myCenter,
                 zoom: 17,
-                scrollwheel: false,
-                draggable: false,
+                scrollwheel: true,
+                draggable: true,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
             var map = new google.maps.Map(document.getElementById("GoogleMap"), mapProp);
