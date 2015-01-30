@@ -39,7 +39,7 @@ p {
 }
 
 a {
-    color: #219ab3;
+    color: #DA291C;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -48,7 +48,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #11505d;
+    color: #fff;
 }
 
 .light {
@@ -93,7 +93,7 @@ a:focus {
 
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 4px;
-    font-size: 16px;
+    font-size: 20px;
     color: #fff;
 }
 
@@ -103,12 +103,12 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #DA291C;
+    color: #fff;
 }
 
 .navbar-custom .nav li.active {
-    outline: nonte;
-    background-color: rgba(255,255,255,.3);
+    outline: none;
+    background-color: #DA291C;
 }
 
 .navbar-custom .nav li a {
@@ -152,8 +152,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/Dundee-by-Night_edited.jpg) no-repeat bottom center scroll;
-    background-color: #000;
+    background: #000 url(../img/Dundee-by-Night_edited.jpg) no-repeat scroll bottom center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -266,18 +265,6 @@ a:focus {
     padding-top: 50px;
 }
 
-.download-section {
-    width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url(../img/the_law_small_bw.jpg) no-repeat center center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
 #GoogleMap {
     width: 100%;
     height: 200px;
@@ -309,17 +296,17 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid #219ab3;
-    color: #219ab3;
+    border: 1px solid #fff;
+    color: #fff;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #219ab3;
+    border: 1px solid #DA291C;
     outline: 0;
     color: #000;
-    background-color: #219ab3;
+    background-color: #DA291C;
 }
 
 ul.banner-social-buttons {
