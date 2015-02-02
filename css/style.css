@@ -30,11 +30,18 @@ p {
     line-height: 1.5;
 }
 
-@media(min-width:767px) {
+@media(min-width:550px) {
     p {
         margin: 0 0 35px;
         font-size: 20px;
         line-height: 1.6;
+    }
+    .navbar.navbar-default {
+        position:fixed;
+        top:0;
+        left:0;
+        z-index:1030;
+
     }
 }
 
@@ -59,15 +66,15 @@ a:focus {
 @navbar-brand-padding: 30px;
 
 .navbar-brand img {
-  height: @navbar-height - @navbar-brand-vpadding * 2;
-  position: absolute;
-  top: @navbar-brand-vpadding;
-  max-width: 50%;
+    height: @navbar-height - @navbar-brand-vpadding * 2;
+    position: absolute;
+    top: @navbar-brand-vpadding;
+    max-width: 45%;
 }
 
 .navbar-custom {
     margin-bottom: 0;
-    /*border-bottom: 1px solid rgba(255,255,255,.3);*/
+    border-bottom: 1px solid #DA291C
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #000;
@@ -87,7 +94,7 @@ a:focus {
 
 .navbar-custom .navbar-brand:focus {
     outline: 0;
-    max-width: 50%;
+    max-width: 45%;
 
 }
 
@@ -108,7 +115,7 @@ a:focus {
 
 .navbar-custom .nav li.active {
     outline: none;
-    background-color: #DA291C;
+    /*background-color: #DA291C;*/
 }
 
 .navbar-custom .nav li a {
@@ -266,7 +273,7 @@ a:focus {
 }
 
 #GoogleMap {
-    width: 100%;
+    width: 90%;
     height: 200px;
     margin-top: 100px;
 }
@@ -319,17 +326,17 @@ ul.banner-social-buttons {
     }
 }
 
-@media(max-width:767px) {
-    ul.banner-social-buttons li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
+/*@media(max-width:767px) {*/
+    /*ul.banner-social-buttons li {*/
+        /*display: block;*/
+        /*margin-bottom: 20px;*/
+        /*padding: 0;*/
+    /*}*/
 
-    ul.banner-social-buttons li:last-child {
-        margin-bottom: 0;
-    }
-}
+    /*ul.banner-social-buttons li:last-child {*/
+        /*margin-bottom: 0;*/
+    /*}*/
+/*}*/
 
 footer {
     padding: 50px 0;
@@ -364,8 +371,8 @@ body {
 }
 
 #main-logo {
-  width: 100% \9;
-  max-width: 400px;
+  width: 400px;
+  max-width: 85%;
 
 }
 
