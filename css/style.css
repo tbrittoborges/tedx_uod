@@ -94,18 +94,10 @@ a:focus {
 
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid #DA291C
+    border-bottom: 1px solid #DA291C;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #000;
-}
-
-.navbar-header {
-    margin-bottom: 0;
-    /*border-bottom: 1px solid rgba(255,255,255,.3);*/
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    /*background-color: #000;*/
 }
 
 .navbar-custom .navbar-brand {
@@ -115,12 +107,11 @@ a:focus {
 .navbar-custom .navbar-brand:focus {
     outline: 0;
     max-width: 45%;
-
 }
 
 .navbar-custom .navbar-brand .navbar-toggle {
-    padding: 4px 4px;
-    font-size: 20px;
+    padding: 4px 6px;
+    font-size: 16px;
     color: #fff;
 }
 
@@ -133,23 +124,36 @@ a:focus {
     color: #fff;
 }
 
-.navbar-custom .nav li.active {
-    outline: none;
-    /*background-color: #DA291C;*/
-}
-
 .navbar-custom .nav li a {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
 }
 
-.navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus,
-.navbar-custom .nav li a.active {
+.navbar-custom .nav li a:hover {
     outline: 0;
+    color: rgba(255,255,255,.8);
+    background-color: transparent;
+}
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+    outline: 0;
+    background-color: transparent;
+}
+
+.navbar-custom .nav li.active {
+    outline: 0;
+}
+
+.navbar-custom .nav li.active a {
     background-color: rgba(218, 41, 28, 0.30);
 }
+
+.navbar-custom .nav li.active a:hover {
+    color: #fff;
+}
+
 
 @media(min-width:767px) {
     .navbar {
