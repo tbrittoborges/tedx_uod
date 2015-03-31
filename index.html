@@ -210,14 +210,15 @@
     <div class="col-lg-8 col-lg-offset-2">
         <h2>Confirmed Speakers</h2>
     </div>
-
-    <div class="window">
-        <img src="img/Sue.png"
+    <div class="window row">
+        <div class="col-md-3">
+            <img src="img/Sue.png"
              alt="Sue photo"
-             class='img-responsive pull-right img-rounded'>
-        </br></br>
-        <p>
-            <ins>Professor Sue Black</ins>
+             class='img-responsive img-rounded'>
+            </div>
+        <div class="col-md-9">
+
+        <p><ins>Professor Sue Black</ins>
             , Director of the Centre for Anatomy
             and Human Identification at University of Dundee.
         </p>
@@ -244,34 +245,34 @@
             Anniversary Prize for Higher and Further Education. Her research was
             shortlisted for the Times Higher Education research project of the
             year.
-
-            <h2>How would you like to make a difference at
-                TEDxUniversityOfDundee?</h2>
-
+            <h3>How would you like to make a difference?</h3>
             <p class="blockquote-reverse">I would like people to think about who
                 they really are.</p>
+            </div>
         </div>
-        <!--<hr class="featurette-divider">-->
     </div>
-    </br></br></br></br>
-    <div class="window">
-        <img src="img/Matthias.png"
-             alt="Image"
-             class='img-responsive pull-left img-rounded'>
-        </br></br>
-        <p><ins>Professor Matthias Klaes</ins>,
-            Dean of the School of Business at University of Dundee.
-        </p>
-        <input type=checkbox class=toggle id=mathias>
-        <label for=mathias></label>
-        <div><p>More information to be added soon.</p></div>
-    </div>
-    </br></br></br></br>
-    <div class="window">
-        <img src="img/Tim.png"
+    <div class="window row">
+                <div class="col-md-3">
+                    <img src="img/Matthias.png"
+                    alt="Mathias photo"
+                    class='img-responsive img-rounded'>
+                    </div>
+        <div class="col-md-9">
+            <p class=""><ins>Professor Matthias Klaes</ins>,
+                    Dean of the School of Business at University of Dundee.
+                        </p>
+                    <input type=checkbox class=toggle id=mathias>
+                    <label for=mathias></label>
+                    <div><p>More information to be added soon.</p></div>
+            </div>
+        </div>
+    <div class="window row">
+        <div class="col-md-3">
+            <img src="img/Tim.png"
              alt="Tim photo"
-             class='img-responsive pull-right img-rounded'>
-        </br></br>
+             class='img-responsive img-rounded'>
+            </div>
+        <div class="col-md-9">
         <p><ins>Professor Tim Newman</ins>, Professor of Biophysics and Dean of
             Engineering, Physics and Mathematics at the University of Dundee.
         </p>
@@ -293,22 +294,22 @@
             and boards in the US and the UK and continually strives to nurture
             interdisciplinary research and education at the interface between
             the physical sciences and the life sciences.</p>
-             <h2>How would you like to make a difference at
-                TEDxUniversityOfDundee?</h2>
+             <h3>How would you like to make a difference?</h3>
             <p class="blockquote-reverse"> Great ideas, an open mind, working
                 with
                 young people, and no sacred cows.</p>
         </div>
     </div>
-    </br></br></br></br>
-    <div class="window">
-        <img src="img/Emanuele.png"
+        </div>
+    <div class="window row">
+        <div class="col-md-3">
+            <img src="img/Emanuele.png"
              alt="Emanuele photo"
-             class='img-responsive pull-left img-rounded'>
-        </br></br>
-        <p>
-            <ins>Professor Emanuele Trucco</ins>
-            ,"NRP Chair of Computational Vision and VAMPIRE project director".
+             class='img-responsive img-rounded'>
+            </div>
+        <div class="col-md-9">
+            <p><ins>Professor Emanuele Trucco</ins>
+            , NRP Chair of Computational Vision and VAMPIRE project director.
         </p>
         <input type=checkbox class=toggle id=emanuele>
         <label for=emanuele></label>
@@ -341,8 +342,7 @@
             Genova, Italy) has become an international standard (2,516
             citations, Google Scholar March 2014).
         </p>
-             <h2>How would you like to make a difference at
-                TEDxUniversityOfDundee?</h2>
+             <h3>How would you like to make a difference ?</h3>
             <p class="blockquote-reverse"> I firmly believe that research has at
                 least two key dimensions.
                 One is the technical challenge of advancing knowledge;
@@ -359,12 +359,10 @@
                 share, laugh and flourish as scientists and as persons.
                 I hope to be able to put across this message as inspiringly as
                 possible!</p>
+            </div>
         </div>
-
-
     </div>
 </section>
-
 
 <!-- About Team -->
 <section id="team" class="container content-section text-center">
@@ -378,7 +376,7 @@
                         <div class="gridder-thumb">
                             <img src="img/dianbo.png"
                                  class="img-circle img-responsive"/>
-                            <span class="title text-center">Dianbo Liu</span>
+                            <span class="title text-nowrap">Dianbo Liu</span>
                         </div>
                     </li>
                     <li class="gridder-list" data-griddercontent="#gillian">
@@ -795,7 +793,6 @@
         var marker = new google.maps.Marker({
             position: myCenter
         });
-
         marker.setMap(map);
     }
     google.maps.event.addDomListener(window, 'load', initialize);
@@ -803,7 +800,6 @@
 <script src="js/jquery.gridder.min.js"></script>
 <script>
     $(function () {
-
         // Call Gridder
         $('.gridder').gridderExpander({
             scroll: true,
@@ -823,12 +819,7 @@
         });
     });
 </script>
-
-
 <!-- Custom Theme JavaScript -->
 <script src="js/custom.js"></script>
-
-
 </body>
-
 </html>

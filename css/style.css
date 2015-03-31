@@ -582,28 +582,6 @@ body {
     padding-bottom: 10%;
 }
 
-#team .thumbnail {
-    width: 70%;
-    background-color: transparent;
-    border-color: transparent;
-}
-
-#team .caption {
-    color: slategrey;
-}
-
-#team .thumbnail:focus,
-#team .thumbnail:hover {
-    border: 1px solid #DA291C;
-    outline: 0;
-    cursor: pointer !important;
-}
-
-#team .thumbnail:focus,
-#team .thumbnail:hover > .caption {
-    color: #DA291C;
-}
-
 .popover {
     color: #000000;
     width: 100%;
@@ -627,6 +605,8 @@ div.window {
     text-align: center;
     margin: 0 auto;
     max-width: 85%;
+    padding-bottom: 10%;
+
     /*background-color: red;*/
 }
 
@@ -643,6 +623,10 @@ div.window label:hover {
     cursor: pointer;
 }
 
+#speakers img {
+    padding-bottom: inherit;
+}
+
 /*#sue + #mathias + #tim + */
 #speakers label:after {
     content: "Bio"
@@ -652,27 +636,27 @@ div.window label:hover {
     content: "Close"
 }
 
-
-input.toggle ~ div {
+#speakers input.toggle ~ div {
     height: 0;
     overflow: hidden;
     /*transition: .6s all cubic-bezier(0.730, -0.485, 0.145, 1.620)*/
 
 }
 
-input.toggle:checked ~ div {
+#speakers input.toggle:checked ~ div {
     height: auto;
     /*background-color: white;*/
     /*color: #000000;*/
 
 }
 
-input.toggle:checked + label {
+#speakers input.toggle:checked + label {
     background: darkgrey;
     content: "Close"
 
 }
 
-input.toggle {
+#speakers input.toggle {
     display: none;
 }
+
