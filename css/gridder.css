@@ -27,6 +27,7 @@
     color: #FFF;
     /*font-size: 14px;*/
     justify-content: center;
+    text-align: center;
 }
 
 .gridder-list .description {
@@ -80,6 +81,7 @@
     position: absolute;
     right: 50px;
     top: 25px;
+    bottom: 25px;
 }
 
 .gridder-navigation a {
@@ -109,6 +111,9 @@
 
 .gridder-expanded-content {
     color: #000000;
+    padding-top: 10px;
+    font-family: Lora, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
 }
 
 /*font-family: 'Arial', sans-serif; font-size: 14px; line-height: 150%; color: red; }*/
