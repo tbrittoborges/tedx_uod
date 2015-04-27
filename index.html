@@ -816,9 +816,7 @@
         </div>
         <div class="col-md-9">
             <p>
-                <ins>Caroline Parkinson</ins>
-                , Consultant.
-
+                <ins>Caroline Parkinson</ins>, Consultant.
             </p>
             <input type=checkbox class=toggle id=caroline>
             <label for=caroline></label>
@@ -847,17 +845,11 @@
                 in 2009/10 in Phoenix, Arizona and the Holyrood Parliament,
                 Edinburgh.
             </p>
-
                 <h3>Presentation details</h3>
-
-
                 <p>
                     <ins>Design is the Difference</ins>
                 </p>
-
-
                 <h4>How would you like to make a difference ?</h4>
-
                 <blockquote><p>I would like the audience to grasp, maybe
                     more than they have before, the importance of design, the
                     contribution that designers make across our society and in
@@ -1091,6 +1083,9 @@
                 University of Dundee<br>
                 Old Hawkhill, Dundee City DD1 5EN<br>
             </address>
+            <p>You can find travel directions on the
+            <a href="http://www.dundee.ac.uk/">University's website</a>.
+            University of Dundee car park is free during weekends.</p>
         </div>
         <div class="col-lg-1 col-md-1 col-sm-1"></div>
     </div>
@@ -1153,16 +1148,8 @@
                     <img src="img/lifesci.png" alt="Image"
                          style="max-width:100%;">
                 </a>
-                <!--<div class="col-md-3"><img src="http://placehold.it/200x150/de935f&text=Become Our Partner" alt="Image" style="max-width:100%;"></div>-->
             </div>
-            <!--.row-->
             </br>
-            <!--<div class="row">-->
-            <!--<div class="col-md-3"><img src="http://placehold.it/200x150/c1ab87&text=partners" alt="Image" style="max-width:100%;"></div>-->
-            <!--<div class="col-md-3"><img src="http://placehold.it/200x150/de935f&text=partners" alt="Image" style="max-width:100%;"></div>-->
-            <!--<div class="col-md-3"><img src="http://placehold.it/200x150/c1ab87&text=partners" alt="Image" style="max-width:100%;"></div>-->
-            <!--<div class="col-md-3"><img src="http://placehold.it/200x150/de935f&text=partners" alt="Image" style="max-width:100%;"></div>-->
-            <!--</div>&lt;!&ndash;.row&ndash;&gt;-->
         </div>
     </div>
     <!--.container-->
@@ -1312,9 +1299,11 @@
 <!-- Plugin JavaScript -->
 <script src="js/jquery.easing.min.js"></script>
 
+
 <script src="http://maps.googleapis.com/maps/api/js"></script>
 <script>
     var myCenter = new google.maps.LatLng(56.459399, -2.982406);
+    var parkCenter = new google.maps.LatLng(56.459356, -2.981526);
     function initialize() {
         var mapProp = {
             center: myCenter,
@@ -1326,9 +1315,21 @@
         var map = new google.maps.Map(document.getElementById("GoogleMap"), mapProp);
 
         var marker = new google.maps.Marker({
-            position: myCenter
+            position: myCenter,
+            title: 'Click to go to Google Maps.',
+            url: "https://www.google.co.uk/maps/place/Dalhousie+Building/@56.459382,-2.9815976,18z/data=!4m2!3m1!1s0x0000000000000000:0x2d4e6f1d11137606",
+            map: map
         });
-        marker.setMap(map);
+        var marker = new google.maps.Marker({
+            position: parkCenter,
+            title: 'Closest car park.',
+            url: "",
+            map: map,
+            fillColor: "blue"
+        });
+        google.maps.event.addListener(marker, 'click', function() {
+             window.location.href = this.url;
+             });
     }
     google.maps.event.addDomListener(window, 'load', initialize);
 </script>
